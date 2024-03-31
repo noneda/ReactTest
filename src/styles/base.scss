@@ -1,0 +1,47 @@
+@use './components/Header.scss';
+@use './components/NotFound.scss';
+@use './components/Overlay.scss';
+@use './components/Footer.scss';
+@use './pages/Login.scss';
+@use './pages/Calendar.scss';
+@use './pages/Home.scss';
+@use './pages/Factura.scss';
+@use './Notifi/Alert.scss';
+@use './Notifi/Notifi.scss';
+
+/*
+@import 'tailwindcss/base';
+@import 'tailwindcss/components';
+@import 'tailwindcss/utilities';
+*/
+@import './colors/Colors.scss' , './colors/fonts.scss';
+html {
+    box-sizing: border-box;
+    font-size: 100%;
+}
+
+body {
+    font-family: $bodyFontFamily $bodyFontFamilyFallback;
+    font-size: $bodyFontSize;
+    font-weight: $bodyFontWeight;
+    margin:  0;
+    padding:  0;
+    min-height:  100vh;
+    display: flex;
+    flex-direction: column;
+  }
+  header{
+    position:static;
+    display:flexbox;
+    float: left;
+  }
+  footer {
+    position:fixed;
+    width: 100%;
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding:  1em;
+    bottom:  0;
+
+  }
